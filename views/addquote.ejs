@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add a Quote</title>
+<a href="/index">Home</a> | <a href="/users">Users</a> | <a href="/addquote">Add Quote</a> | <a href="/quotes">Quotes</a> 	
+</head>
+<body>
+
+<% if(typeof(errors) != 'undefined' ) { %>
+     <% for (var x in errors) { %>
+      <h3><%= errors[x].messages %></h3>
+     <% } %>
+<% } %>	
+
+<form action="/addquote" method="post">
+	<p>Your Name: <input type="text" name="user"></p>
+	<p>Your Quote: <input type="text" name="content"></p>
+	<input type="submit" value="Add">
+</form>
+
+</body>
+</html>
+

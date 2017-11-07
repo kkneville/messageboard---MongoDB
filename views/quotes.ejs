@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quotes</title>
+<a href="/index">Home</a> | <a href="/users">Users</a> | <a href="/addquote">Add Quote</a> | <a href="/quotes">Quotes</a> 
+</head>
+<body>
+
+<h2>Quotes</h2>
+
+<% for(var i=0; i < quotes.length; i++){%>
+<ul>
+<li><h3>Quote: <%= quotes[i].content %></h3></li>
+<li>Name: <%= quotes[i].user %></li>
+<li>Timestamp: <%= quotes[i].createdAt %></li>
+</ul>
+<% } %>
+
+</body>
+</html>
+

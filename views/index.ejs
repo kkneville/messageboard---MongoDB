@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Mongoose Project</title>
+
+<a href="/index">Home</a> | <a href="/users">Users</a> | <a href="/addquote">Add Quote</a> | <a href="/quotes">Quotes</a> 	
+</head>
+<body>
+
+<% if(typeof(errors) != 'undefined' ) { %>
+     <% for (var x in errors) { %>
+      <h3><%= errors[x].messages %></h3>
+     <% } %>
+<% } %>	
+
+<form action="/users" method="post">
+<p>Register</p>
+<p>First Name: <input type="text" name="firstname"></p>
+<p>Last Name: <input type="text" name="lastname"></p>
+<p>Age: <input type="integer" name="age"></p>
+<p>Email: <input type="text" name="email"></p>
+<input type="submit" value="Register">
+</form>
+
+
+</body>
+</html>

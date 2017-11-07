@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+<a href="/index">Home</a> | <a href="/users">Users</a> | <a href="/addquote">Add Quote</a> | <a href="/quotes">Quotes</a> 
+</head>
+<body>
+
+<h3>Users</h3>
+
+<% for(var i=0; i < users.length; i++){%>
+<ul>
+<li>Name: <%= users[i].firstname %> <%= users[i].lastname %></li>
+<li>Age: <%= users[i].age %></li>
+<li>Email: <%= users[i].email %></li>
+</ul>
+<% } %>
+
+
+
+</body>
+</html>
+
