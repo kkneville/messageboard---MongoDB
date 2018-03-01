@@ -107,7 +107,7 @@ app.get('/quotes', function(req, res) {
 		else {
 		res.render('quotes', {quotes: quotes})
 		}
-	})   // This is where we will retrieve the users from the database and include them in the view page we will be rendering.
+	})   // This is where we will retrieve the quotes from the database and include them in the view page we will be rendering.
 })
 
 
